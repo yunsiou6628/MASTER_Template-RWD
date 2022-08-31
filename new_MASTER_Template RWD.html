@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- MASTER_Template RWD 作業樣式 -->
+  <link rel="stylesheet" href="./css/new_MASTER_Template RWD.css">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Frijole&family=Love+Ya+Like+A+Sister&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Patua+One&family=Poppins:wght@600&family=Rubik+Wet+Paint&family=Special+Elite&display=swap">
+
+  <!-- font awesome 解壓縮後 css 目錄複製 all.min.css 或 all.css 與整個 webfonts 字型目錄-->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- ./webfonts/  => font awesome  -->
+  <link rel="stylesheet" href="./webfonts/">
+
+</head>
+
+<body>
+  <!-- 手機最小尺寸 -->
+
+    <!-- 一、大圖切換圖片(左右文字 + 小箭頭 SERVICES 往下) -->
+    <div id="section01">
+      <div class="container">
+        <!-- 大圖 -->
+        <!-- 使用 object-fit 可以跟 background:url(圖片)效果差不多 -->
+        <!-- <img class="img1 object-fit" src="./images/slide1.jpg" id="a">
+        <img class="img2 object-fit" src="./images/slide2.jpg"> -->
+        <!-- 設定 點選左右箭頭  object-fit 圖片 display:none 開啟關閉    -->
+        <!-- 左右箭頭點選 -->
+        <button class="leftbtn" id="prev"><img src="./images/prev.png"></button>
+        <button class="rightbtn" id="next"><img src="./images/next.png"></button>
+
+        <!-- 圓形置中字 -->
+        <!-- 增加 span 設定圓形框  -->
+        <div class="slide-title">
+          <h1 class="inner-circle">
+            <span>
+              HELLO!<br>
+              WE ARE<br>
+              MASTER
+            </span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- 平板和電腦才出現內容 -->
+      <!-- 左字 觸碰出現 -->
+      <div class="liftword">
+        <h1>
+          WE<br>
+          DISIGN<br>
+          PREFECTION
+        </h1>
+      </div>
+
+      <!-- 右字 觸碰出現 -->
+      <div class="rightword">
+        <h1>
+          COMPLETLY<br>
+          COSTOMISABLE
+        </h1>
+      </div>
+
+      <!-- SERVICES 向下箭頭  -->
+      <div class="services">
+        <h4>SERVICES</h4>
+        <a href="#"><img src="./images/SERVICES.png"></a>
+      </div>
+    </div>
+
+
+    <!-- 二、header navbar(導覽列滑動後會置頂--未設定 滾輪事件) -->
+    <div id="section02">
+
+      <div class="container">
+
+        <!-- logo -->
+        <a href="#a" class="logo-a"><img src="./images/logo.png"></a>
+
+        <!-- navbar 導覽列 + menu_list 選單列表 -->
+        <div id="navbarbtn">
+          <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+          <!-- transition checked 狀態 -->
+          <input type="checkbox" id="toggle" checked>
+          <div class="toggle-box">
+            <button>
+              <span>HOME</span>
+              <!-- HOME 裡面點開內容 -->
+              <ul>
+                <li>HOME 1</li>
+                <li>HOME 2</li>
+                <li>HOME 3</li>
+              </ul>
+            </button>
+            <button>
+              <span>SERVICES</span>
+            </button>
+            <button>
+              <span>WORK</span>
+            </button>
+            <button>
+              <span>TEAM</span>
+            </button>
+            <button>
+              <span>BLOG</span>
+            </button>
+            <button>
+              <span>CONTACT</span>
+            </button>
+            <button>
+              <span>PAGES</span>
+              <!-- PAGES 裡面點開內容 -->
+              <ul>
+                <li>BLOG</li>
+                <li>BLOG POST</li>
+              </ul>
+            </button>
+
+            <!-- ⭐後面未完成，記得回來增加點選連結 -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 三、SERVICES 服務介紹 (圈圈設計版型 + icon) -->
+    <div id="section03">
+      <div class="container">
+        <div class="row">
+
+          <!-- SERVICES -->
+          <div class="services_img">
+            <h1>SERVICES</h1>
+            <img src="./images/services-bg.png">
+          </div>
+
+
+          <div class="col_frame">
+            <!-- CLIENTS LOVE US 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>CLIENTS LOVE US</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- PREMIUM SUPPORT 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>PREMIUM SUPPORT</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- FLEXIBLE & MULTIPORPUSE 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>FLEXIBLE & MULTIPORPUSE</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- SAFE INFORMATION 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <!-- <i class="fa-solid fa-unlock-keyhole"></i> -->
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>SAFE INFORMATION</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- UNIQUE IDEAS 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>UNIQUE IDEAS</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- WORKING PERFECTLY 介紹 -->
+            <div class="col">
+              <div class="card">
+                <div class="circular">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+              
+                <!-- 內文 -->
+                <div class="text">
+                  <h3>WORKING PERFECTLY</h3>
+                  <p>Vestialum ac diam sit amet quamveh icula elementum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <!-- 四、FEATURES 特徵 (手機介紹 + icon + 線) -->
+  <div id="section04">
+    <div class="container">
+      <div class="row">
+
+      <!-- 手機圖片 -->
+      <img class="mobileimg" src="./images/mobile.png">
+      
+      <!-- features_textbox => 大外框/傾斜設定 -->
+        <div class="features_textbox">
+
+            <!-- FEATURES -->
+            <h1>FEATURES</h1>
+
+          <!-- MULTI-PORPUSE 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="featurestext">
+                <h2>MULTI-PORPUSE</h2>
+                <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+              </div>
+
+              <div class="lightbulb_line">
+								<hr>
+								<i></i>
+							</div>
+
+            </div>
+          </div>
+
+
+          <!-- ULTRA RESPONSIVE 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="featurestext">
+                <h2>ULTRA RESPONSIVE</h2>
+                <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+              </div>
+
+              <div class="house_line">
+								<hr>
+								<i></i>
+							</div>
+              
+            </div>
+          </div>
+
+
+          <!-- FREE UPDATES 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="featurestext">
+                <h2>FREE UPDATES</h2>
+                <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+              </div>
+
+              <div class="gift_line">
+								<hr>
+								<i></i>
+							</div>
+
+            </div>
+          </div>
+
+
+          <!-- PHOTOBOMB 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="featurestext">
+                <h2>PHOTOBOMB</h2>
+                <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+              </div>
+
+              <div class="camera_line">
+								<hr>
+								<i></i>
+							</div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 五、OUR WORK (manu + 圖) -->
+  <div id="section05">
+    <div class="container">
+
+      <h1>OUR WORK</h1>
+
+      <ul class="ourwork_menu">
+        <li class="menu-item"><a href="#"><span>SHOW ALL</span></a></li>
+        <li class="menu-item"><a href="#"><span>DESIGN</span></a></li>
+        <li class="menu-item"><a href="#"><span>BRANDING</span></a></li>
+        <li class="menu-item"><a href="#"><span>CREATIVE</span></a></li>
+      </ul>
+
+      <!-- 圖片區塊 -->
+      <div class="row">
+        <div class="col">
+          <img src="./images/portfolio-1-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-2-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-3-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+        
+        <div class="col">
+          <img src="./images/portfolio-4-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-5-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-6-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-7-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/portfolio-8-480x400.png">
+
+            <div class="textbox_COOLCHAIRS">
+            <h2>COOL CHAIRS</h2>
+            <p>design</p>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- 六、WHY CHOOSE US (介紹 + icon) -->
+  <div id="section06">
+    <div class="container">
+      <div class="row">
+
+        <!-- why_choose_us_textbox => 大外框/傾斜設定 -->
+        <div class="why_choose_us_textbox">
+
+          <h1>WHY CHOOSE US</h1>
+
+          <!-- DESIGN TO BRAG ABOUT 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-display"></i>
+              </div>
+            
+              <!-- 內文 -->
+              <div class="why_choose_us_text">
+                <h2>DESIGN TO BRAG ABOUT</h2>
+                <p>Vestialum ac diam sit amet quamveh icula ele mentum raesent</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STUNNING IDEAS 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+            
+              <!-- 內文 -->
+              <div class="why_choose_us_text">
+                <h2>STUNNING IDEAS</h2>
+                <p>Vestialum ac diam sit amet quamveh icula ele mentum raesent</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREMIUM SUPPORT 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="why_choose_us_text">
+                <h2>PREMIUM SUPPORT</h2>
+                <p>Vestialum ac diam sit amet quamveh icula ele mentum raesent</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DESIGN TO BRAG ABOUT 介紹 -->
+          <div class="col">
+            <div class="card">
+              <div class="circular">
+                <i class="fa-solid fa-box-archive"></i>
+              </div>
+
+              <!-- 內文 -->
+              <div class="why_choose_us_text">
+                <h2>DESIGN TO BRAG ABOUT</h2>
+                <p>Vestialum ac diam sit amet quamveh icula ele mentum raesent</p>
+              </div>
+            </div>
+          </div>
+
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <!-- 七、HOW WE WORK (流程小圖 research - design - develop - launch) -->
+  <div id="section07">
+    <div class="container">
+      <div class="row">
+
+        <h1>HOW WE WORK</h1>
+
+        <div class="col">
+          <div class="card">
+            <div class="circular">
+              <i class="fa-solid fa-box-archive"></i>
+            </div>
+            <p>research</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="circular">
+              <i class="fa-solid fa-book"></i>
+            </div>
+            <p>design</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="circular">
+              <i class="fa-solid fa-window-maximize"></i>
+            </div>
+            <p>develop</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="circular">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>launch</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 八、HOW WE WORK (區塊切版 research - design - develop - launch 詳細內容) -->
+  <div id="section08">
+    <div class="container">
+      <div class="row">
+
+        <div class="col_bg1">
+          <div class="card">
+            <h1>We do our research</h1>
+            <p>Morbi in velit ligula, eget vulputate ligula viverra, mi ae sollicitudin rhon usante roin gravida nibh vel velit auctor aliquet. Aeneanollic itudin lorem bibendum.Morbi in velit ligula, eget vulputate ligula viverra, mi ae solliciti rhoncusante roin gravida nibh vel velit auctor aliquetcv</p>
+          </div>
+        </div>
+
+        <div class="col_bg2">
+          <div class="card">
+            <h1>We design perfection</h1>
+            <p>Morbi in velit ligula, eget vulputate ligula viverra, mi ae sollicitudin rhon usante roin gravida nibh vel velit auctor aliquet. Aeneanollic itudin lorem bibendum.Morbi in velit ligula, eget vulputate ligula viverra, mi ae solliciti rhoncusante roin gravida nibh vel velit auctor aliquetcv</p>
+          </div>
+        </div>
+
+        <!-- 有空一張圖片沒文字 -->
+        <div class="col_bg3"></div>
+
+        <div class="col_bg4">
+          <div class="card">
+            <h1>Clean code</h1>
+            <p>Morbi in velit ligula, eget vulputate ligula viverra, mi ae sollicitudin rhon usante roin gravida nibh vel velit auctor aliquet. Aeneanollic itudin lorem bibendum.Morbi in velit ligula, eget vulputate ligula viverra, mi ae solliciti rhoncusante roin gravida nibh vel velit auctor aliquetcv</p>
+          </div>
+        </div>
+
+        <div class="col_bg5">
+          <div class="card">
+            <h1>We launch the project</h1>
+            <p>Morbi in velit ligula, eget vulputate ligula viverra, mi ae sollicitudin rhon usante roin gravida nibh vel velit auctor aliquet. Aeneanollic itudin lorem bibendum.Morbi in velit ligula, eget vulputate ligula viverra, mi ae solliciti rhoncusante roin gravida nibh vel velit auctor aliquetcv</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 九、手機 + TRY OUR HIGH-TECH APLICATION (介紹 + icon) -->
+  <div id="section09">
+    <div class="container">
+      <div class="row">
+
+        <!-- 最大尺寸才有圖片 -->
+        <div class="iphone_img">
+          <img src="./images/iphone.png">
+        </div>
+
+        <div class="text_right">
+          <h1>TRY OUR HIGH-TECH APLICATION</h1>
+          <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibend um auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum veli.</p>
+          <br>
+
+          <div class="col">
+            <div class="card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h1>Free Updates</h1>
+              <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h1>Free Updates</h1>
+              <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h1>Free Updates</h1>
+              <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h1>Free Updates</h1>
+              <p>Curabitur arcu erat, accusaimp eret et porttitor at sesdabx auisque velit nisi pret</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 十、OUR GENIUS (團隊 + 影片) -->
+  <div id="section10">
+    <div class="container">
+
+      <h1>OUR GENIUS</h1>
+
+      <div class="row">
+        
+        <div class="col">
+          <img src="./images/genius-1.jpg">
+
+            <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/genius-info.jpg">
+
+          <div class="textbox2">
+            <h2>ANDREW DOE</h2>
+            <h3>Designer</h3>
+            <p>Vestibulum ac diam sit amet quam ve hicula elementum sed sit amet duirae sent sapienmassa, convallis.</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-solid fa-basketball"></i>
+            <i class="fa-solid fa-dove"></i>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/genius-3.jpg">
+        
+          <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div></div>
+
+        <div class="col">
+          <img src="./images/genius-4.jpg">
+
+          <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/genius-5.jpg">
+
+          <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div>
+        </div>
+        <div class="col">
+          <img src="./images/genius-6.jpg">
+
+          <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div>
+        </div>
+        <div class="col">
+          <img src="./images/genius-7.jpg">
+        
+          <div class="textbox">
+            <h2>ANDREW DOE</h2>
+            </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <!-- 自動撥放 autoplay -->
+        <iframe src="https://www.youtube.com/embed/7SnmCUwOsts" width="100%" height="100%" autoplay muted loop frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 十一、數據 (PROJECT COMPLETE + CLIENT WORKED WITH + CUPS OF COFFEE CONSUMED + ANSWERED QUESTIONS) -->
+  <div id="section11">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            <h1><i class="fa-solid fa-compass"></i> <span class="date1"></span>K</h1>
+            <p>PROJECT COMPLETE</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h1><i class="fa-solid fa-briefcase"></i> <span class="date2"></span></h1>
+            <p>CUPS OF COFFEE CONSUMED</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h1><i class="fa-solid fa-mug-saucer"></i> <span class="date3"></span></h1>
+            <p>CUPS OF COFFEE CONSUMED</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h1><i class="fa-solid fa-shield-halved"></i> <span class="date4"></span></h1>
+            <p>ANSWERED QUESTIONS</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- 十二、LATEST POSTS  -->
+  <div id="section12">
+    <div class="container">
+
+      <h1>LATEST POSTS</h1>
+
+      <div class="row">
+        <div class="col">
+          <div class="left_item">
+            <div class="word">
+              <h2>07</h2>
+              <hr>
+              <h3>MAY</h3>
+            </div>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+          <div class="card">
+            <img src="./images/image1.jpg">
+            <div class="text_title">
+              <h2>A BEAUTIFUL VIEW</h2>
+              <h3>NOVEMBER 21, 2013</h3>
+              <a href="#"><h3>| 5 COMMENTS |</h3></a>
+              <i class="fa-solid fa-heart"></i>
+              <h3>23</h3>
+              <p>Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
+              <a href="#"><h4>READ MORE</h4></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="left_item">
+            <div class="word">
+              <h2>07</h2>
+              <hr>
+              <h3>MAY</h3>
+            </div>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+          <div class="card">
+            <img src="./images/image2.jpg">
+            <div class="text_title">
+              <h2>A BEAUTIFUL VIEW</h2>
+              <h3>NOVEMBER 21, 2013</h3>
+              <a href="#"><h3>| 5 COMMENTS |</h3></a>
+              <i class="fa-solid fa-heart"></i>
+              <h3>23</h3>
+              <p>Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
+              <a href="#"><h4>READ MORE</h4></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="left_item">
+            <div class="word">
+              <h2>07</h2>
+              <hr>
+              <h3>MAY</h3>
+            </div>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+          <div class="card">
+            <img src="./images/image3.jpg">
+            <div class="text_title">
+              <h2>A BEAUTIFUL VIEW</h2>
+              <h3>NOVEMBER 21, 2013</h3>
+              <a href="#"><h3>| 5 COMMENTS |</h3></a>
+              <i class="fa-solid fa-heart"></i>
+              <h3>23</h3>
+              <p>Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
+              <a href="#"><h4>READ MORE</h4></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 十三、WHAT CLIENTS SAY -->
+  <div id="section13">
+    <div class="container">
+      <div class="row">
+
+        <h1>WHAT CLIENTS SAY</h1>
+
+        <div class="col">
+          <!-- <img src="./images/client-big-1.jpg"> -->
+          <div class="card">
+            <div class="text_AneDoe">
+              <h1>"Werbi in velit ligula eget vulputate ligulaviv sollicitudin rcusante orbi in velit"</h1>
+              <p>by Ane Doe</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <!-- <img src="./images/client-big-2.jpg"> -->
+          <div class="card">
+            <div class="text_AneDoe">
+              <h1>"Werbi in velit ligula eget vulputate ligulaviv sollicitudin rcusante orbi in velit"</h1>
+              <p>by Ane Doe</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <!-- <img src="./images/client-big-3.jpg"> -->
+          <div class="card">
+            <div class="text_AneDoe">
+              <h1>"Werbi in velit ligula eget vulputate ligulaviv sollicitudin rcusante orbi in velit"</h1>
+              <p>by Ane Doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 十四、DESIGN TO BRAG ABOUT -->
+  <div id="section14">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            <div class="text_left">
+              <h1>DESIGN TO BRAG ABOUT</h1>
+              <p>Morbi in velit, eget vulputate ligula viverra, mi ae sollicitudin rhon roin gravida nibh vel velit auctor aliquet. Aeneanollic itudin lorem dumorbi in velit ligula, eget vulputate ligula viverra, mi ae sollicit rhoncusante roin gravida nibh vel velit auctor aliquetc</p>
+            </div>
+            <img src="./images/about-imac.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 十五、平台選單 (g+ t f v ...) -->
+  <div id="section15">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="link_icon"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-solid fa-t"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-solid fa-dove"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-solid fa-rss"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-solid fa-basketball"></i></a></div>
+          <div class="link_icon"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 十六、google -->
+  <div id="section16">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.987515772864!2d105.81941115372538!3d21.022738699692077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2z6LaK5Y2X5rKz5YWn6YKE5YqN6YOh5rKz5YWn!5e0!3m2!1szh-TW!2stw!4v1657294161046!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 十七、開始項目 + 發送消息 -->
+  <div id="section17">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="card_left">
+            <div class="text_letsgo">
+              <p>HAVE YOU FALLEN IN LOVE YET?</p>
+              <h1>START A PROJECT</h1>
+              <button>
+                <h2>LET'S GO</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card_right">
+            <div class="text_tullus">
+              <p>WANT TO TELL US SOMETHING?</p>
+              <h1>SEND A MESSAGE</h1>
+              <button>
+                <h2>TULL US</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 十八、footer -->
+  <div id="section18">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="footer_text">
+            <h3>EMAIL</h3>
+            <p>email@example.com</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="icon">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <div class="footer_text">
+            <h3>PHONE</h3>
+            <p>(012)3456789</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="footer_text">
+            <p>Copyright © Master. All rights reserved.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="footer_text">
+            <h1> ↑ </h1>
+            <h2> Go on top</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+    integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+    crossorigin='anonymous'></script>
+
+  <!-- gsap 主程式 -->
+  <script src="./gsap/gsap.js"></script>
+
+  <!-- 引入 scrollTrigger plugin -->
+  <script src="./gsap/ScrollTrigger.js"></script>
+
+  <script>
+    // 一、大圖切換圖片
+    // 用 true / false 判斷第一張和第二張圖片
+    let flag = true
+    // 抓到2個按鈕
+    // .on(事件名稱, function(){})
+    $("#prev,#next").on("click", function(){
+      console.log('ij');
+        if (flag) {
+          // .attr() 標籤屬性
+          // 括號裡第一個是放屬性名稱，如果有第二個的話，就是改值(第二張圖片)
+          // $('#a').attr("src","./images/slide2.jpg")
+          $('#section01').css("background","url('../images/slide2.jpg') no-repeat center/cover")
+
+          console.log('1');
+          flag = false
+        } else {
+          // $('#a').attr("src","./images/slide1.jpg")
+          $('#section01').css("background","url('../images/slide1.jpg') no-repeat center/cover")
+          flag = true
+          // 狀態要更改回來
+        }
+    })
+
+
+
+    // 二、header navbar(導覽列滑動後會置頂 滾輪事件) 
+    // onscroll 滾輪事件
+    // 抓視窗最頂部 window.onscroll
+    // 視窗滾動 = function 名稱() { 執行內容 }
+    window.onscroll = function stickys() { 
+      let section02_navbar = document.getElementById("section02")
+      let section02_sticky = section02_navbar.offsetTop 
+      // offsetTop  => section02_sticky <=> 780  從頂部 0 到 header navbar 的距離
+
+      // pageYOffset 滾動距離 >= header navbar 頂部的位置
+      if (window.pageYOffset >= 780) {
+        console.log("hihi");
+        // 原本 CSS 裡 position:relative 改成 position:fixed
+        section02_navbar.style.position="fixed"
+        section02_navbar.classList.add("sticky")
+        // 新增一個 class => .sticky
+      } else {
+        // 滾回去時 window.pageYOffset < 780 要回到原來位置
+        section02_navbar.style.position="relative"
+        section02_navbar.classList.remove("sticky")
+      } 
+    }
+
+
+
+    // 十一、數據 (PROJECT COMPLETE + CLIENT WORKED WITH + CUPS OF COFFEE CONSUMED + ANSWERED QUESTIONS)
+    // Gsap.scrollTrigger_05.object
+    gsap.registerPlugin(ScrollTrigger)
+    const date = {
+      num1: 145,
+      num2: 2456,
+      num3: 3125,
+      num4: 2478
+    }
+
+    gsap.from(date, {
+      scrollTrigger: {
+        trigger: '#section11',
+        start: 'top center',
+        end: 'bottom center',
+        toggleActions: 'play none none reset',
+        // markers: true
+      },
+      num1: 0,
+      num2: 0,
+      num3: 0,
+      num4: 0,
+      onUpdate() {
+        $('.date1').text(parseInt(date.num1))
+        $('.date2').text(parseInt(date.num2))
+        $('.date3').text(parseInt(date.num3))
+        $('.date4').text(parseInt(date.num4))
+      },
+      duration: 1,
+      // ease: 'back',
+      // yoyo: true,
+      // repeat: -1,
+    })
+
+
+
+
+  </script>
+
+</body>
+
+</html>
